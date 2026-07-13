@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VIKARABAD DISTRICT - VIKARABAD MANDAL</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#eef3f8;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0b5394;
+padding:15px 25px;
+color:#fff;
+box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+
+.logo{
+width:70px;
+height:70px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+}
+
+.title h1{
+font-size:30px;
+margin-bottom:5px;
+}
+
+.title h2{
+font-size:18px;
+font-weight:normal;
+}
+
+.search-box{
+width:95%;
+max-width:800px;
+margin:20px auto;
+}
+
+.search-box input{
+width:100%;
+padding:14px;
+font-size:17px;
+border:1px solid #ccc;
+border-radius:10px;
+outline:none;
+}
+
+.search-box input:focus{
+border-color:#0b5394;
+}
+
+.container{
+width:95%;
+max-width:1100px;
+margin:auto;
+padding-bottom:40px;
+}
+
+.place{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#fff;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.place:hover{
+transform:translateY(-3px);
+}
+
+.left{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.icon{
+width:55px;
+height:55px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+background:#dbeeff;
+font-size:28px;
+}
+
+.info h3{
+color:#0b5394;
+margin-bottom:5px;
+}
+
+.info p{
+color:#666;
+}
+
+.open-btn{
+background:#0b5394;
+color:#fff;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.open-btn:hover{
+background:#1565c0;
+}
+
+footer{
+background:#0b5394;
+color:#fff;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:12px;
+}
+
+.logo{
+width:60px;
+height:60px;
+}
+
+.place{
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+}
+
+.open-btn{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="ou-logo.png" alt="OU Logo" class="logo">
+
+<div class="title">
+<h1>VIKARABAD DISTRICT</h1>
+<h2>VIKARABAD MANDAL</h2>
+</div>
+
+<img src="otbi-logo.png" alt="OTBI Logo" class="logo">
+
+</header>
+
+<div class="search-box">
+<input
+type="text"
+id="search"
+placeholder="Search Place..."
+onkeyup="searchPlaces()">
+</div>
+
+<div class="container" id="places">
+<!-- 1 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🏨</div>
+    <div class="info">
+      <h3>VIKB Haraha Deluxe Lodge</h3>
+      <p>Lodge</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3366,77.90422" target="_blank">Open Map</a>
+</div>
+
+<!-- 2 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">👓</div>
+    <div class="info">
+      <h3>VIKB New Shiva Opticals</h3>
+      <p>Optical Shop</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3366,77.90435" target="_blank">Open Map</a>
+</div>
+
+<!-- 3 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🚌</div>
+    <div class="info">
+      <h3>VIKB Vikarabad Bus Stop</h3>
+      <p>Bus Stop</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3345,77.90888" target="_blank">Open Map</a>
+</div>
+
+<!-- 4 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🎭</div>
+    <div class="info">
+      <h3>VIKB Asian Sailaja Theatre01</h3>
+      <p>Theatre</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3391,77.90902" target="_blank">Open Map</a>
+</div>
+
+<!-- 5 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🎬</div>
+    <div class="info">
+      <h3>VIKB Cinemax Theatre02</h3>
+      <p>Theatre</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3464,77.90562" target="_blank">Open Map</a>
+</div>
+
+<!-- 6 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🛍️</div>
+    <div class="info">
+      <h3>VIKB Sri Venkateshwara Shop</h3>
+      <p>Shop</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3361,77.90444" target="_blank">Open Map</a>
+</div>
+
+<!-- 7 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">💡</div>
+    <div class="info">
+      <h3>VIKB Sangameshwara Electricals</h3>
+      <p>Electrical Shop</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3357,77.90386" target="_blank">Open Map</a>
+</div>
+
+<!-- 8 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🍽️</div>
+    <div class="info">
+      <h3>VIKB Waah Family Restaurant</h3>
+      <p>Restaurant</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3356,77.90305" target="_blank">Open Map</a>
+</div>
+
+<!-- 9 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🏥</div>
+    <div class="info">
+      <h3>VIKB Sri Krishna Hospital</h3>
+      <p>Hospital</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3352,77.90267" target="_blank">Open Map</a>
+</div>
+
+<!-- 10 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🏥</div>
+    <div class="info">
+      <h3>VIKB Memorial Hospital</h3>
+      <p>Hospital</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3338,77.90352" target="_blank">Open Map</a>
+</div>
+<!-- 11 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🌳</div>
+    <div class="info">
+      <h3>VIKB LIG Park</h3>
+      <p>Park</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3458,77.9089" target="_blank">Open Map</a>
+</div>
+
+<!-- 12 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🏫</div>
+    <div class="info">
+      <h3>VIKB St. Jude's High School</h3>
+      <p>School</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3439,77.90795" target="_blank">Open Map</a>
+</div>
+
+<!-- 13 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🏫</div>
+    <div class="info">
+      <h3>VIKB Siddhartha School of Excellence</h3>
+      <p>School</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3429,77.9077" target="_blank">Open Map</a>
+</div>
+
+<!-- 14 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🏫</div>
+    <div class="info">
+      <h3>VIKB Bhashyam High School</h3>
+      <p>School</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3421,77.90728" target="_blank">Open Map</a>
+</div>
+
+<!-- 15 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🛒</div>
+    <div class="info">
+      <h3>VIKB Market Yard</h3>
+      <p>Market</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3408,77.9064" target="_blank">Open Map</a>
+</div>
+
+<!-- 16 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🛍️</div>
+    <div class="info">
+      <h3>VIKB More Supermarket</h3>
+      <p>Supermarket</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3455,77.90538" target="_blank">Open Map</a>
+</div>
+
+<!-- 17 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🏬</div>
+    <div class="info">
+      <h3>VIKB Chandana Brothers Mall</h3>
+      <p>Mall</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3444,77.90495" target="_blank">Open Map</a>
+</div>
+
+<!-- 18 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🏨</div>
+    <div class="info">
+      <h3>VIKB Hotel</h3>
+      <p>Hotel</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3405,77.90539" target="_blank">Open Map</a>
+</div>
+
+<!-- 19 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🛕</div>
+    <div class="info">
+      <h3>VIKB Hanuman Mandir 01</h3>
+      <p>Temple</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3535,77.90487" target="_blank">Open Map</a>
+</div>
+
+<!-- 20 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🛕</div>
+    <div class="info">
+      <h3>VIKB Mallikarjuna Mandir02</h3>
+      <p>Temple</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3293,77.92794" target="_blank">Open Map</a>
+</div>
+<!-- 21 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🛕</div>
+    <div class="info">
+      <h3>VIKB Nagadevatha Temple 03</h3>
+      <p>Temple</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3297,77.92746" target="_blank">Open Map</a>
+</div>
+
+<!-- 22 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🛕</div>
+    <div class="info">
+      <h3>VIKB Hindhu Temple04</h3>
+      <p>Temple</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3321,77.93017" target="_blank">Open Map</a>
+</div>
+
+<!-- 23 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🏠</div>
+    <div class="info">
+      <h3>VIKB Veerabadara Women Hostel</h3>
+      <p>Hostel</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3280,77.91990" target="_blank">Open Map</a>
+</div>
+
+<!-- 24 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">⛽</div>
+    <div class="info">
+      <h3>VIKB Indian Oil</h3>
+      <p>Petrol Pump</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3287,77.92283" target="_blank">Open Map</a>
+</div>
+
+<!-- 25 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🛒</div>
+    <div class="info">
+      <h3>VIKB Munna Kirana Store</h3>
+      <p>Kirana Store</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=17.3274,77.92767" target="_blank">Open Map</a>
+</div>
+
+</div>
+
+<footer>
+  <p>© 2026 Vikarabad District - Vikarabad Mandal</p>
+  <p>Developed using OU & OTBI Project Template</p>
+</footer>
+
+<script>
+function searchPlaces() {
+
+  let input = document.getElementById("search").value.toLowerCase();
+  let places = document.getElementsByClassName("place");
+
+  for (let i = 0; i < places.length; i++) {
+
+    let text = places[i].innerText.toLowerCase();
+
+    if (text.indexOf(input) > -1) {
+      places[i].style.display = "flex";
+    } else {
+      places[i].style.display = "none";
+    }
+
+  }
+
+}
+</script>
+
+</body>
+</html>
